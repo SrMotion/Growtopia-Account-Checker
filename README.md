@@ -57,7 +57,7 @@ namespace AccountChecker
         }
         static void Main(string[] args)
         {
-            var acccheckerInstace = new AccCheckerLib.AccChecker("ronvin381", "kusi@123", "213.179.209.168", "17201", "3.66");
+            var acccheckerInstace = new AccCheckerLib.AccChecker("GrowID", "Password", "213.179.209.168", "17201", "3.66");
             acccheckerInstace.initialize(GenerateMac());
             acccheckerInstace.status.valueChanged += Status_valueChanged;
             acccheckerInstace.OnCheckingDone.CheckingDone += OnCheckingDone_CheckingDone;
