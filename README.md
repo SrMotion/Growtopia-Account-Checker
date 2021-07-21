@@ -1,6 +1,6 @@
 # Growtopia Account Checker Libary
 
-[![Discord](https://img.shields.io/discord/863569897754066964)](https://discord.gg/fRwrV53pux) 
+[![Discord](https://img.shields.io/discord/863569897754066964?label=discord)](https://discord.gg/fRwrV53pux) 
 
 ## Example Console App: 
 
