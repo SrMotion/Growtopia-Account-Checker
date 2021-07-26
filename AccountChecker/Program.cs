@@ -13,6 +13,7 @@ namespace AccountChecker
         {
             if (Properties.Resources.Items != null)
             {
+                //by SrMotion#6900
                 StringReader sr = new StringReader(Properties.Resources.Items);
                 string items = String.Empty;
                 int item = 0;
