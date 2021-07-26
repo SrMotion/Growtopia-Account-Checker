@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountChecker", "AccountChecker\AccountChecker.csproj", "{EC7A0E1D-41DE-4830-9E73-4A1E3AC2429F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC7A0E1D-41DE-4830-9E73-4A1E3AC2429F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7A0E1D-41DE-4830-9E73-4A1E3AC2429F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7A0E1D-41DE-4830-9E73-4A1E3AC2429F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7A0E1D-41DE-4830-9E73-4A1E3AC2429F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76784D9B-9C0E-4262-8E6B-BABF244E6D01}
+	EndGlobalSection
+EndGlobal
