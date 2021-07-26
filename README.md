@@ -7,12 +7,35 @@
 ```csharp
 using AccCheckerLib;
 using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace AccountChecker
 {
     class Program
     {
+        public static List<string> ItemDB = new List<string>();
+        static void SetupItemDatabase()
+        {
+            if (Properties.Resources.Items != null)
+            {
+                //by SrMotion#6900
+                StringReader sr = new StringReader(Properties.Resources.Items);
+                string items = String.Empty;
+                int item = 0;
+                while ((items = sr.ReadLine()) != null)
+                {
+                    ItemDB.Add(items);
+                    item++;
+                }
+                Console.WriteLine("[+] Item database set with {0} items!", item);
+            }
+            else
+            {
+                Console.WriteLine("[+] Items are null!");
+            }
+        }
         private static void Status_valueChanged(object sender, EventArgs e)
         {
             string txt = (sender as StringEvt).Text;
@@ -35,7 +58,7 @@ namespace AccountChecker
                     Console.WriteLine("Inventory Items: ");
                     foreach (PlayerInvItems items in value.InventoryItems)
                     {
-                        Console.WriteLine("ItemID: {0} Count: {1} Equipped: {2}",items.itemID,items.count,items.equipped);
+                        Console.WriteLine("Item Name: {3} ItemID: {0} Count: {1} Equipped: {2}", items.itemID, items.count, items.equipped,ItemDB[items.itemID]);
                     }
                     Console.WriteLine("Worlds: ");
                     value.Worlds.ForEach(Console.WriteLine);
@@ -57,6 +80,7 @@ namespace AccountChecker
         }
         static void Main(string[] args)
         {
+            SetupItemDatabase();
             var acccheckerInstace = new AccCheckerLib.AccChecker("GrowID", "Password", "213.179.209.168", "17201", "3.66");
             acccheckerInstace.initialize(GenerateMac());
             acccheckerInstace.status.valueChanged += Status_valueChanged;
@@ -66,5 +90,4 @@ namespace AccountChecker
         }
     }
 }
-
 ```
