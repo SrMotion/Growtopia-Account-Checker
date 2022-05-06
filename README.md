@@ -1,5 +1,6 @@
-# Growtopia Account Checker Libary
+# Growtopia Account Checker Library
 
+## not updated since 10 months
 [![Discord](https://img.shields.io/discord/863569897754066964?label=discord)](https://discord.gg/fRwrV53pux) 
 
 ## Example Console App: 
